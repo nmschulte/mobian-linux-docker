@@ -1,0 +1,4 @@
+[submodule "rockchip-linux"]
+	path = rockchip-linux
+	url = https://salsa.debian.org/Mobian-team/devices/kernels/rockchip-linux.git
+	branch = mobian-6.1

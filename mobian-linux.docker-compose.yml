@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  rockchip-linux:
+    image: rockchip-linux:debian--${DEBIAN_VERSION:-bookworm}
+    build:
+      dockerfile: rockchip-linux.Dockerfile
+      context: .
+    volumes:
+      - .:/mobian/mobian-linux
+    network_mode: host
+    user: '1000'
