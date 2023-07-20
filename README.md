@@ -11,7 +11,7 @@ See `build-rockchip-linux.sh` for build steps.
 
 ## Use
 ```sh
-git submodule init
+git submodule update --init --recursive
 DEBIAN_VERSION=bookworm sh -c 'docker-compose --file mobian-linux.docker-compose.yml build --build-arg DEBIAN_VERSION=${DEBIAN_VERSION}'
 DEBIAN_VERSION=bookworm docker-compose --file mobian-linux.docker-compose.yml run --rm rockchip-linux
 ```
